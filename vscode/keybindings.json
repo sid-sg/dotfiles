@@ -1,0 +1,23 @@
+[
+    {
+    "key": "tab",
+    "command": "tab",
+    "when": "editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+        "key": "shift+k",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.mode != 'Insert'"
+  },
+  {
+      "key": "shift+j",
+      "command": "workbench.action.previousEditor",
+      "when": "vim.mode != 'Insert'"
+  } 
+]
+
