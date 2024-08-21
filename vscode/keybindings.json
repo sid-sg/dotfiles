@@ -10,14 +10,36 @@
     "when": "editorTextFocus && !editorTabMovesFocus"
   },
   {
-        "key": "shift+k",
-        "command": "workbench.action.nextEditor",
-        "when": "vim.mode != 'Insert'"
+    "key": "shift+k",
+    "command": "workbench.action.nextEditor",
+    "when": "vim.mode != 'Insert'"
   },
   {
-      "key": "shift+j",
-      "command": "workbench.action.previousEditor",
-      "when": "vim.mode != 'Insert'"
-  } 
+    "key": "shift+j",
+    "command": "workbench.action.previousEditor",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && !vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer"
+  }
 ]
 

@@ -14,5 +14,10 @@
             "commands": ["redo"]
         }
     ],
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false
 }
 
