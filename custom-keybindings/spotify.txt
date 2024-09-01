@@ -1,0 +1,19 @@
+playerctl spotify next:
+	/usr/bin/playerctl next --player spotify
+	ctrl + n
+
+playerctl spotify previous:
+	/usr/bin/playerctl previous --player spotify
+	ctrl + b
+
+playerctl spotify play/pluse:
+	/usr/bin/playerctl play-pause --player spotify
+	ctrl + p
+
+dbus spotify skip 10sec backward:
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Seek int64:-10000000
+	ctrl + ,
+		
+dbus spotify skip 10sec forward:
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Seek int64:10000000
+	ctrl + .
